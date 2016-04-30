@@ -1,0 +1,31 @@
+svbrdf 
+
+vr_scale     4    # Head position multiplied by 10^(4 / 4)
+
+displacement_density   16.000000    # About 4.000000 heightmap pixels per vertex. 0 = disabled.
+displacement_magnitude 0.010000
+
+
+camera_position -5.500000 -5.000000 2.500000
+camera_target   0.000000 0.000000 0.000000
+camera_up       0.000000 0.000000 0.000000
+
+ambient 0.050000 0.050000 0.050000    # Constant diffuse HDR ambient
+
+shadow_lights 3
+
+light
+light_position 4.000000 2.000000 3.000000
+light_falloff  1.000000          # Multiplier for falloff
+light_color    1.000000 0.000000 0.000000    # HDR color
+
+light
+light_position 3.000000 3.000000 3.000000
+light_falloff  1.000000          # Multiplier for falloff
+light_color    0.000000 1.000000 0.000000    # HDR color
+
+light
+light_position 2.000000 4.000000 3.000000
+light_falloff  1.000000          # Multiplier for falloff
+light_color    0.000000 0.000000 1.000000    # HDR color
+
