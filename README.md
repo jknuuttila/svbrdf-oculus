@@ -3,6 +3,19 @@ A Direct3D 11 program to render captured materials using Oculus Rift,
 using materials from
 [Two-Shot SVBRDF Capture for Stationary Materials](https://mediatech.aalto.fi/publications/graphics/TwoShotSVBRDF/) by Aittala et al (2015).
 
+## Supported features
+
+* Rendering with a procedural quadrilateral or a loaded `.OBJ` mesh with
+  texture coordinates.
+* Lighting using point lights.
+* Simple displacement mapping using Direct3D 11 tessellation with
+  adjustable tessellation density and displacement magnitude.
+* Simple shadow mapping with PCF.
+* Simple tangent space normal mapping.
+* Antialiasing with 2x SSAA, 4x SSAA and 4x MSAA.
+* Texture space lighting for antialiasing, when rendering with the procedural quadrilateral.
+* Support for saving and loading preset scenes.
+
 # How to get started
 
 1. Clone the `svbrdf-oculus` repository.
