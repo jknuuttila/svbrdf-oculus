@@ -21,7 +21,8 @@ using materials from
 1. Clone the `svbrdf-oculus` repository.
 2. Download the captured material set from [Two-Shot SVBRDF Capture for Stationary Materials Code and data](https://mediatech.aalto.fi/publications/graphics/TwoShotSVBRDF/code_and_data.html).
   * The material set is the large 13 GB 7-zip archive [Dataset: Output texture maps](https://mediatech.aalto.fi/publications/graphics/TwoShotSVBRDF/twoshot_data_results.7z).
-3. Extract the captured material set under the `bin/data` directory.
+3. Extract the captured material set under the `bin/data` directory,
+   which is the default data directory.
 4. Optionally, extract the heightmaps for the captured materials under
    the `bin/data` directory. This is required for displacement mapping.
    The link for downloading the heightmaps will be provided here once
@@ -51,6 +52,11 @@ For compiling, a Visual Studio 2015 solution file is provided under
 `SVBRDFOculus/SVBRDFOculus.sln`. Additionally, the Oculus SDK is
 required, and the `$OVRSDKROOT` environment variable should be set to
 point to the Oculus SDK directory.
+
+In order to run properly, the program needs to be pointed to a data
+directory which it recursively scans for materials, height maps, and
+meshes. This is done with the `--data <data-directory>` command line
+switch. If the switch is omitted, `./data` is used as the default.
 
 # License
 
