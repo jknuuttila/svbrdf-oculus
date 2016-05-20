@@ -21,12 +21,11 @@ using materials from
 1. Clone the `svbrdf-oculus` repository.
 2. Download the captured material set from [Two-Shot SVBRDF Capture for Stationary Materials Code and data](https://mediatech.aalto.fi/publications/graphics/TwoShotSVBRDF/code_and_data.html).
   * The material set is the large 13 GB 7-zip archive [Dataset: Output texture maps](https://mediatech.aalto.fi/publications/graphics/TwoShotSVBRDF/twoshot_data_results.7z).
+  * The heightmaps are in a second archive [Dataset for the Oculus Rift viewer: Height maps](https://mediatech.aalto.fi/publications/graphics/TwoShotSVBRDF/heightfields.zip).
 3. Extract the captured material set under the `bin/data` directory,
    which is the default data directory.
 4. Optionally, extract the heightmaps for the captured materials under
    the `bin/data` directory. This is required for displacement mapping.
-   The link for downloading the heightmaps will be provided here once
-   one is available.
 5. Run `bin/SVBRDFOculus.exe`.
 6. The default scene should load, and an on-screen help text should be
    displayed.
